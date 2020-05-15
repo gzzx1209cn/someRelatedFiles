@@ -1,6 +1,6 @@
 function FindProxyForURL(url, host)
 {
-    if (shExpMatch(url,"*.cyol.com/*"))
+    if (shExpMatch(host,"cyol.com") || shExpMatch(host,"baidu.com"))
     {
         return "PROXY 10.0.0.95:9999";
     }
